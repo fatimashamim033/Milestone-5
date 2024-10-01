@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Path and Shareable Link Resume Builder by Fatima Shamim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Unique Path and Shareable Link Resume Builder by
+        <span class="name"><span>F</span><span>A</span><span>T</span><span>I</span><span>M</span><span>A</span>
+        <span> </span><span>S</span><span>H</span><span>A</span><span>M</span><span>I</span><span>M</span></span></h1>
+<form action="">
+    <div class="container">
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="profile-pic">
+                <img src="profile.png" alt="Profile Picture" id="profile-pic">
+            </div>
+            <label for="username">User Name</label>
+            <input type="text" id="name" placeholder="Enter your user Name" required>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your Name" required>
+
+            <label for="Father's name">Father's Name</label>
+            <input type="fName" id="fName" placeholder="Enter your Father's Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="Linkedin">Linkedin Id</label>
+            <input type="url" id="link" placeholder="Enter your LinkedIn URL" required>
+
+           
+        </fieldset>
+
+        <!-- Education Section -->
+        <fieldset>
+            <legend>Education</legend>
+            <textarea id="education" rows="6" placeholder="Add your education details here" required></textarea>
+        </fieldset>
+
+        <!-- Work Experience Section -->
+        <fieldset>
+            <legend>Work Experience</legend>
+            <textarea id="experience" rows="6" placeholder="Add your work experience" required></textarea>
+        </fieldset>
+
+        <!-- Skills Section -->
+        <fieldset>
+            <legend>Skills</legend>
+            <textarea id="skills" rows="6" placeholder="Add your skills" required></textarea>
+            
+            <button type="button" id="toggle-skills">Toggle Skills Visibility</button>
+        </fieldset>
+
+        <button type="submit" id="generate-resume">Generate Resume</button>
+</form>
+        <!-- Resume Output Section with Editable -->
+        <div id="resume-output" contenteditable="true">
+            <h2>Your Resume:</h2>
+            <div id="resume"></div>
+    <!-- Add this inside the container div after the resume-output div -->
+    <div id="resume-actions">
+    <p>Shareable Link: <span id="shareable-link"></span></p>
+    <button id="copy-link">Copy Link</button>
+    <button id="download-pdf">Download PDF</button>
+</div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    //<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
